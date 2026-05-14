@@ -4,102 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food-landing</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Hind+Madurai:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="./img/logo.png" alt="logo street food">
+    <header class="header">
+        <a href="./index.html" class="header-logo">
+            <img src="./img/logo.png" alt="logo street food" class="header-img">
         </a>
-        <nav>
-            <ul>
-                <li><a href="">Головна</a></li>
-                <li><a href="">Про нас</a></li>
-                <li><a href="">Меню</a></li>
-                <li><a href="">Додаток</a></li>
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li class="header-item"><a href="" class="header-item-link">Головна</a></li>
+                <li class="header-item"><a href="" class="header-item-link">Про нас</a></li>
+                <li class="header-item"><a href="" class="header-item-link">Меню</a></li>
+                <li class="header-item"><a href="" class="header-item-link">Додаток</a></li>
             </ul>
-            <ul>
-                <li><a href="https://www.instagram.com/streetfoodmerefa/"><img src="./img/inst.png" alt="instagram"></a></li>
-                <li><a href="https://www.facebook.com/p/streetfoodmerefa-100065192182675/?locale=ru_RU"><img src="./img/facebook.png" alt="facebook"></a></li>
-                <li><a href=""><img src="./img/tiktok.png" alt="tiktok"></a></li>
-                <li><a href=""><img src="./img/youtube.png" alt="youtube"></a></li>
+            <ul class="header-list_social">
+           <li  class="header-item_social"><a class="header-link_social" href="https://www.instagram.com/streetfoodmerefa/"><img src="./img/inst.png" alt="instagram" class="header-icon_social"></a></li>
+                <li  class="header-item_social"><a class="header-link_social" href="https://www.facebook.com/p/streetfoodmerefa-100065192182675/?locale=ru_RU"><img src="./img/facebook.png" alt="facebook" class="header-icon_social"></a></li>
+                <li  class="header-item_social"><a class="header-link_social" href=""><img src="./img/tiktok.png" alt="tiktok" class="header-icon_social"></a></li>
+                <li  class="header-item_social"><a  class="header-link_social"href=""><img src="./img/youtube.png" alt="youtube" class="header-icon_social"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div>
-                <div>
-                    <p>
+        <section class="hero">
+            <div  class=" container hero-container">
+                <div class="hero-wrap">
+                    <p class="hero-subtitle">
                         Смак вулиць Мерефи
                     </p>
-                    <h1>
-                        Найкраща шаурма та стрітфуд у місті   
+                    <h1 class="hero-title">
+                        Найкраща шаурма <span class="hero-span"> та стрітфуд у місті</span>    
                     </h1>
-                    <p>
+                    <p class="hero-text">
                         Соковите м’ясо, свіжі овочі та фірмові соуси — все, що потрібно для ідеального перекусу прямо на ходу.
                     </p>
-                    <button>
+                    <button class="hero-btn">
                         Замовити
                     </button>
                 </div>
-                <img src="./img/heroimg.png" alt="головне зображення">
+                <img src="./img/heroimg.png" alt="головне зображення" class="hero-img">
             </div>
         </section>
 
-        <section>
-            <div>
-                <p> 
-                    Ми готуємо з душею
-                </p>
-                <p>
-                    Street Food Merefa — це місце, де народжується справжній смак вулиці. 
-                    Ми використовуємо тільки свіжі інгредієнти та перевірені рецепти, 
+        <section class="about">
+            <div class="container">
+                <p class="about-text">
+                    Street Food Merefa —<span class="about-span">це місце, де народжується справжній смак вулиці. 
+                    Ми використовуємо тільки свіжі інгредієнти та перевірені рецепти,</span> 
                     щоб кожен клієнт отримав максимум задоволення.
                 </p>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>
+        <section class="product" >
+            <div class="container" >
+                <h2 class="product-title" >
                     Меню
                 </h2>
-                <ul>
-                    <li>
-                        <article>
-                            <img src="./img/classic-shawarma.png" alt="класична шаурма">
-                            <h3>Класична шаурма</h3>
-                            <p>Соковите куряче м’ясо, свіжі овочі та ніжний соус у хрусткому лаваші.</p>
-                            <p>Ціна: 120 грн</p>
-                            <button>Замовити</button>
+                <ul class="product-list">
+                    <li class="product-item">
+                        <article class="product-article" >
+                            <img src="./img/classic-shawarma.png" alt="класична шаурма" class="product-img" >
+                            <h3 class="product-subtitle" >Класична шаурма</h3 class >
+                            <p class="product-text" >Соковите куряче м’ясо, свіжі овочі та ніжний соус у хрусткому лаваші.</p>
+                            <p class="product-price" >Ціна: 120 грн</p>
+                            <button class="product-btn"> Замовити</button>
                         </article>
                     </li>
-                    <li>
-                        <article>
-                            <img src="./img/shawarma-with-cheese.png" alt="шаурма з сиром">
-                            <h3>Шаурма з сиром</h3>
-                            <p>Апетитне м’ясо з розплавленим сиром та фірмовим соусом.</p>
-                            <p>Ціна: 140 грн</p>
-                            <button>Замовити</button>
+                    <li class="product-item">
+                        <article class="product-article" >
+                            <img src="./img/shawarma-with-cheese.png" alt="шаурма з сиром" class="product-img" >
+                            <h3 class="product-subtitle" >Шаурма з сиром</h3>
+                            <p class="product-text" >Апетитне м’ясо з розплавленим сиром та фірмовим соусом.</p>
+                            <p class="product-price" >Ціна: 140 грн</p>
+                            <button class="product-btn"> Замовити</button>
                         </article>
                     </li>
-                    <li>
-                        <article>
-                            <img src="./img/xlshawarma.png" alt="XL шаурма">
-                            <h3>XL шаурма</h3>
-                            <p>Велика порція для справжніх любителів стрітфуду.</p>
-                            <p>Ціна: 180 грн</p>
-                            <button>Замовити</button>
+                    <li class="product-item">
+                        <article class="product-article">
+                            <img src="./img/xlshawarma.png" alt="XL шаурма" class="product-img">
+                            <h3 class="product-subtitle">XL шаурма</h3>
+                            <p class="product-text">Велика порція для справжніх любителів стрітфуду.</p>
+                            <p class="product-price">Ціна: 180 грн</p>
+                            <button class="product-btn">Замовити</button>
                         </article>
                     </li>
-                    <li>
-                        <article>
-                            <img src="./img/shawarma-with-barbecue.png" alt="шаурма з барбекю">
-                            <h3>BBQ шаурма</h3>
-                            <p>М’ясо з ароматним BBQ соусом та овочами для насиченого смаку.</p>
-                            <p>Ціна: 150 грн</p>
-                            <button>Замовити</button>
+                    <li class="product-item" >
+                        <article class="product-article" >
+                            <img src="./img/shawarma-with-barbecue.png" alt="шаурма з барбекю" class="product-img" >
+                            <h3 class="product-subtitle" >BBQ шаурма</h3>
+                            <p class="product-text" >М’ясо з ароматним BBQ соусом та овочами для насиченого смаку.</p>
+                            <p class="product-price" >Ціна: 150 грн</p>
+                            <button class="product-btn" >Замовити</button>
                         </article>
                     </li>
                 </ul>
