@@ -9,7 +9,7 @@
   --main-background-color:rgba(0, 0, 0, 1);
   --footer-background-color:#151515;
   --bg-color-btn:rgba(210, 49, 102, 1);
-
+  --border--color:#888888 ;
 
 }
 
@@ -25,59 +25,65 @@ a {
 }
 
 .container{
-    width: 1247px;
+    width: 1248px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0px 15px 0px 15px ;
 
 }
 
-.header {
-    padding: 50px 96px 50px 96px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--main-background-color);
-   }
-     
+.header{
+    padding: 40px 0;
+}
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
 .header-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 207.5px;
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+}
 
+.header-menu{
+    display:flex;
+    gap:95px;
+}
+
+.header-list_social{
+  display: flex;
+  gap: 15px;
+    margin-left:95px;
 }
 
 
 .header-img{
   width: 142px;
   height: 94px;
-  
- 
-}
-
-.header-menu {
-    display: flex;
-    gap: 95px;
-    align-items: center;
-    justify-content: center;
 
 }
+
+
 
 .header-item-link{
   font-size: 18px;
   color:var(--color-primary);
   opacity: 0.5;
-  font-weight:var(--main-font) ;
+  font-family: var(--main-font-font);
+  font-weight:500;
 }
 
 
 .header-list_social{
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  margin-left:207px;
   
 }
+
 
 
 
@@ -144,11 +150,13 @@ a {
 .hero-img{
   width: 588px;
   height: 588px;
+   object-fit:cover;
 }
 
 
 .about{
   background-color: var(--main-background-color);
+  padding: 129px 0 105px;
 }
 
 .about-text{
@@ -206,7 +214,7 @@ a {
   font-size:26px;
   font-family: var(--link-font);
   font-weight:700 ;
-  padding:24px 0px 18px;
+  padding-bottom:8px;
   color:var(--color-primary) ;
 }
 
@@ -259,6 +267,9 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+.simple-list{
+  margin-top: 64px;
+}
 
 .simple-title{
   font-size: 56px;
@@ -283,7 +294,6 @@ a {
   font-weight: 400;
   color: var(--color-primary);
   opacity:0.5;
-  padding-bottom: 64px;
 
 
 }
@@ -292,27 +302,55 @@ a {
 .simple-item{
   display: flex;
   align-items: center;
-  gap: 26px;
-  margin:10px 0px 10px 16px ;
+  gap: 16px;
+  margin-bottom:26px;
+}
+.simple-item:last-child{
+  margin-bottom:0px;
 }
 
-.simple-item_text{
+.simple-number{
+   border: 1px solid var(--border--color);
+   border-radius: 50%;
+   padding: 10px;
+   line-height: 27px;
+   color:var(--color-primary) ;
+   width:48px;
+   height: 48px;
+   text-align: center;
+   opacity: 0.6;
+   
+}
 
+
+.simple-img{
+  width: 800px;
+}
+
+.simple-list_social{
+  display: flex;
+  gap: 12px;
+  margin-top: 46px;
   
 
 }
 
-
-
 .form{
   margin: 0 auto;
   background-color: var(--main-background-color);
+  padding-top:223px ;
+  padding-bottom: 223px;
+  
 }
 
 .form-content{
 display: flex;
 align-items: center;
 flex-direction: column;
+}
+
+.form-container{
+  position: relative;
 }
 
 .form-title{
@@ -324,6 +362,7 @@ flex-direction: column;
   line-height: 94%;
   text-align: center;
   max-width: 653px;
+  padding-bottom: 56px;
 }
 
 .form-span{
@@ -346,11 +385,18 @@ flex-direction: column;
 
 .form-btn{
 border-radius: 1000px;
-padding: 25.5px 44px 25.5px 44px;
+padding: 24.5px 44px 24.5px 44px;
 background-color: var(--color-accent);
 color: var(--color-primary);
 background-color: var(--bg-color-btn);
+font-family: var(--second-font);
+position: absolute;
+right:0 ;
+bottom: 0;
+font-size: 20px;
 }
+
+
 
 .footer{
   background-color: var(--footer-background-color);
@@ -365,16 +411,18 @@ background-color: var(--bg-color-btn);
   gap: 176px;
 }
 
+
 .footer-wrap{
   max-width: 212px;
 }
 
 .footer-img{
-  width: 176px;
-  height: 52px;
   padding-bottom: 24px;
-  
+  width: 142px;
+  height: 94px;
+
 }
+
 
 .footer-text{
   color:var(--color-primary) ;
@@ -406,10 +454,12 @@ background-color: var(--bg-color-btn);
   font-family: var(--main-font);
   font-weight: 600;
   padding-bottom: 33px;
+  
 }
 
-.footer-menu_item{
+.footer-menu{
   display: flex;
+  flex-direction: column;
   gap: 4px;
   max-width: 78px;
   
@@ -423,4 +473,5 @@ color: var(--color-primary);
 .footer-link{
   color: var(--color-primary);
   opacity: 0.8;
+  line-height: 1.7;
 }
