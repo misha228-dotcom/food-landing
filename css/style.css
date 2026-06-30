@@ -33,7 +33,7 @@ a {
 }
 
 .header{
-    padding: 40px 0;
+    padding: 40px 0 40px;
 }
 
 .header-container{
@@ -72,7 +72,7 @@ a {
   font-size: 18px;
   color:var(--color-primary);
   opacity: 0.5;
-  font-family: var(--main-font-font);
+  font-family: var(--main-font);
   font-weight:500;
 }
 
@@ -81,6 +81,7 @@ a {
   display: flex;
   gap: 15px;
   margin-left:207px;
+  background-color: var(--footer-background-color);
   
 }
 
@@ -115,7 +116,7 @@ a {
   color: var(--color-primary);
   padding-bottom: 16px;
   width: 587px;
-  letter-spacing: -7%;
+  letter-spacing: -0.07em;
   line-height: 94%;
 }
 
@@ -165,7 +166,7 @@ a {
   font-weight: 400;
   font-family:var(--third-font) ;
   text-align: center;
-  line-height: -7%;
+  line-height: -0.07em;
 }
 
 .about-span{
@@ -183,7 +184,7 @@ a {
   font-size: 56px;
   font-family:var(--second-font) ;
   font-weight:500 ;
-  letter-spacing: -7%;
+  letter-spacing: -0.07em;
   line-height: 94%;
   color: var(--color-primary);
   padding-bottom: 56px;
@@ -278,7 +279,7 @@ a {
   color: var(--color-primary);
   padding-bottom: 16px;
   width: 466px;
-  letter-spacing: -7%;
+  letter-spacing:-0.07em;
   line-height: 94%;
 }
 
@@ -335,6 +336,8 @@ a {
 
 }
 
+
+
 .form{
   margin: 0 auto;
   background-color: var(--main-background-color);
@@ -358,7 +361,7 @@ flex-direction: column;
   font-family: var(--third-font);
   font-weight:400 ;
   color:var(--color-primary) ;
-  letter-spacing: -7%;
+  letter-spacing: -0.07em;
   line-height: 94%;
   text-align: center;
   max-width: 653px;
