@@ -158,7 +158,9 @@ a {
 .about{
   background-color: var(--main-background-color);
   padding: 129px 0 105px;
+  position: relative;
 }
+
 
 .about-text{
   color:var(--color-primary);
@@ -168,10 +170,50 @@ a {
   text-align: center;
   line-height: -0.07em;
 }
+.about-text::after{
+  display: inline-block;
+  content: "";
+  background-image: url("../img/classic-burger.png");
+  width:144px ;
+  height: 144px;
+  position: absolute;
+  bottom:145px ;
+  left:33px ;
+}
 
 .about-span{
   color:var(--color-primary);
   opacity: 0.2;
+}
+
+.about-img-one{
+  width:144px ;
+  height: 144px;
+  position: absolute;
+  top:170px ;
+  bottom:85px ;
+ left: 33px;
+ object-fit:cover;
+  
+
+}
+
+.about-img-two{
+  width:90px ;
+  height:90px;
+  position: absolute;
+  bottom: 60px;
+  left:624px;
+  object-fit:cover;
+}
+
+.about-img-three{
+  width:137px ;
+  height:137px ;
+  position: absolute;
+  top: 0;
+  left:991px;
+  object-fit:cover;
 }
 
 
