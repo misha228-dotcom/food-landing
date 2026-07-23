@@ -158,7 +158,7 @@ a {
 .about{
   background-color: var(--main-background-color);
   padding: 129px 0 105px;
-  position: relative;
+  
 }
 
 
@@ -168,18 +168,26 @@ a {
   font-weight: 400;
   font-family:var(--third-font) ;
   text-align: center;
-  line-height: -0.07em;
+  letter-spacing: -0.07em;
+  position: relative;
 }
-.about-text::after{
-  display: inline-block;
+
+
+.about-text::before{
+  display:block;
   content: "";
-  background-image: url("../img/classic-burger.png");
-  width:144px ;
-  height: 144px;
+  background-image: url("../img/img-strawberry.png"), url("../img/img-milk.png"), url("../img/img-pistachio.png");
+  background-position: 624px 300px,33px 161px,991px 0px;
+  background-size: 90px, 144px, 137px;
+  width:1248px;
+  height:399px;
   position: absolute;
-  bottom:145px ;
-  left:33px ;
+  top: -60px;
+  left: 0;
+   background-repeat: no-repeat, no-repeat, no-repeat;
+  
 }
+
 
 .about-span{
   color:var(--color-primary);
@@ -192,8 +200,8 @@ a {
   position: absolute;
   top:170px ;
   bottom:85px ;
- left: 33px;
- object-fit:cover;
+  left: 33px;
+  object-fit:cover;
   
 
 }
